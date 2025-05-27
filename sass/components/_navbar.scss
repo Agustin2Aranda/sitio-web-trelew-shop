@@ -1,0 +1,19 @@
+.navbar {
+  @include flex(center, wrap, space-between, center, 1.25rem);
+  list-style: none;
+  padding: 1.25rem .625rem;
+
+
+  li {
+    a {
+      text-decoration: none;
+      border-radius: .625rem;
+      background-color: map-get($color-back, fondo1);
+      color: map-get($color-font, fuente2);
+      font-size: 1.25rem;
+      padding: .625rem 1.25rem;
+      margin: 0rem .625rem;
+      display: inline-block;
+    }
+  }
+}

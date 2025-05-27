@@ -1,1 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  background-color: #89BBE2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  position: fixed;
+  top: 0;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  margin: 0.625rem;
+}
+header .logo {
+  width: 6.875rem;
+  height: 15vh;
+  text-decoration: none;
+  border-radius: 0.625rem;
+}
+header .icons {
+  bottom: 30px;
+  right: 30px;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px #89BBE2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  gap: 1.2rem;
+}
+header .icons a {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+header .icons a img {
+  width: 24px;
+  height: 24px;
+}
+
+.bienvenida {
+  background-image: url(../assets/img/bienvenida.jpg);
+  background-size: cover;
+  padding: 0.625rem;
+  width: 100%;
+  height: 80vh;
+  justify-items: center;
+  align-content: center;
+}
+.bienvenida h1 {
+  background-color: #9C7C5D;
+}
+.bienvenida p {
+  background-color: #9C7C5D;
+}
+.bienvenida img {
+  width: 50%;
+}
+
+.categorias-destacadas {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background-color: #4DACB1;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0.625rem;
+  column-gap: 0.625rem;
+}
+.categorias-destacadas img {
+  width: 50%;
+}
+.categorias-destacadas h2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: center;
+  align-self: center;
+}
+.categorias-destacadas .categoria-uno {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.categorias-destacadas .categoria-dos {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.categorias-destacadas .categoria-tres {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: self-end;
+  align-self: center;
+}
+
+.container-cards {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  margin-top: 7.8125rem;
+  background-color: #4DACB1;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0.625rem;
+  column-gap: 0.625rem;
+}
+.container-cards img {
+  width: 50%;
+}
+.container-cards h1 {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-uno {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-dos {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-tres {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-cuatro {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 4/5;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-cinco {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 5/6;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-seis {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-siete {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-ocho {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-nueve {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 4/5;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+.container-cards .cards-diez {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  grid-column: 5/6;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 1.25rem 0.625rem;
+}
+.navbar li a {
+  text-decoration: none;
+  border-radius: 0.625rem;
+  background-color: #4DACB1;
+  color: #000000;
+  font-size: 1.25rem;
+  padding: 0.625rem 1.25rem;
+  margin: 0rem 0.625rem;
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */
