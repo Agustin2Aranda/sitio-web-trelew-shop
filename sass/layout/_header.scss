@@ -1,12 +1,12 @@
 header {
   width: 100%;
   height: 15%;
-  background-color: map-get($color-back, fondo4);
+  background-color: map-get($color-back, fondo3);
   @include flex(row, nowrap, space-between, center, none);
   position: fixed;
   top: 0;
   border-radius: .625rem;
-  padding: .625rem;
+  padding: .625rem .625rem;
   margin: .625rem;
 
   .logo {
@@ -19,10 +19,10 @@ header {
   .icons {
     bottom: 30px;
     right: 30px;
-    background: map-get($color-font, fondo4);
+    background: map-get($color-font, fondo3);
     padding: 1rem 1.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 20px map-get($color-back, fondo4);
+    box-shadow: 0 10px 20px map-get($color-back, fondo3);
     @include flex(row, nowrap, space-between, center, none);
     gap: 1.2rem;
 
@@ -36,5 +36,59 @@ header {
         height: 24px;
       }
     }
+  }
+}
+
+@media(max-width:1024px) {
+  header {
+    @include flex(row, nowrap, space-around, center, none);
+  }
+
+  .contenedor-logo {
+    @include flex(row, nowrap, space-between, center, none);
+  }
+
+  .navbar {
+    @include flex(row, nowrap, center, center, none);
+  }
+}
+
+@media(max-width:768px) {
+  header {
+    @include flex(column, nowrap, space-between, center, none);
+  }
+
+  .contenedor-logo {
+    @include flex(column, nowrap, center, center, none);
+  }
+}
+
+@media(max-width:500px) {
+  header {
+    @include flex(column, nowrap, space-between, center, none);
+  }
+
+  .navbar {
+    @include flex(column, nowrap, center, center, none);
+  }
+}
+
+@media(max-width:375px) {
+  header {
+    @include flex(column, nowrap, center, center, none);
+  }
+
+  .navbar {
+    @include flex(column, nowrap, center, center, none);
+  }
+}
+
+@media(max-width:330px) {
+  header {
+    @include flex(column, nowrap, center, center, none);
+  }
+
+  .navbar {
+    @include flex(column, nowrap, center, center, none);
   }
 }

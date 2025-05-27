@@ -1,0 +1,95 @@
+.contactenos {
+  margin-top: 10%;
+  @include flex(column, wrap, space-between, center, none);
+  background-color: map-get($color-back, fondo2);
+}
+
+.info {
+  padding: 2rem;
+  background-color: map-get($color-back, fondo2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .625rem;
+
+  h2 {
+    justify-self: center;
+    align-self: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 1rem;
+
+    img {
+      margin-right: .5rem;
+      color: map-get($color-font, fuente3);
+    }
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formulario {
+  background-color: map-get($color-back, fondo2);
+  padding: 1.5rem;
+
+  h2 {
+    @include flex(column, nowrap, none, center, 1rem);
+    padding-bottom: .9375rem;
+  }
+}
+
+form {
+  @include flex(column, nowrap, none, center, 1rem);
+
+  input,
+  textarea {
+    padding: .75rem;
+    border: .125rem solid #4DACB1;
+    border-radius: .3125rem;
+    font-size: 1rem;
+  }
+
+  button {
+    background-color: map-get($color-back, fondo1);
+    color: map-get($color-font, fuente2);
+    border: none;
+    padding: .75rem;
+    border-radius: .3125rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: map-get($color-back, fondo3);
+    }
+  }
+}
+
+.redes {
+  text-align: center;
+  margin: 2rem;
+
+  .iconos {
+    margin-top: 1rem;
+    @include flex(row, nowrap, center, center, 1rem);
+
+    a {
+      background-color: map-get($color-font, fuente1);
+      color: map-get($color-font, fuente1);
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 40%;
+      @include flex(row, nowrap, center, center, none);
+      text-decoration: none;
+
+      &:hover {
+        background-color: map-get($color-back, fondo2);
+      }
+    }
+  }
+}
