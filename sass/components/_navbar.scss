@@ -6,6 +6,7 @@
   li {
     a {
       text-decoration: none;
+      font-family: 'lora', serif;
       border-radius: .625rem;
       background-color: map-get($color-back, fondo1);
       color: map-get($color-font, fuente2);

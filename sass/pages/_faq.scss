@@ -19,14 +19,14 @@
 
   input {
     padding: .8rem 1rem;
-    border: .0625rem solid map-get($color-font, fuente2);
+    border: .0625rem solid map-get($color-back, fondo1);
     border-radius: 1.5625rem 0 0 1.5625rem;
     width: 100%;
   }
 
   button {
     padding: .8rem 1rem;
-    border: .0625rem solid map-get($color-font, fuente2);
+    border: .0625rem solid map-get($color-back, fondo1);
     border-left: none;
     border-radius: 0 1.5625rem 1.5625rem 0;
     cursor: pointer;
@@ -46,7 +46,23 @@
 
     &.activo {
       background-color: map-get($color-back, fondo1);
-      color: map-get($color-font, fuente2);
+      color: map-get($color-font, fuente1);
     }
   }
+}
+
+.preguntas {
+  @include flex(row, wrap, space-between, center, 1rem);
+  border: .0625rem solid map-get($color-back, fondo1);
+  border-radius: .3125rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+
+  &.abierto {
+    border: .125rem solid map-get($color-back, fondo3);
+  }
+}
+
+.respuestas {
+  padding: 0 1rem 1rem;
 }

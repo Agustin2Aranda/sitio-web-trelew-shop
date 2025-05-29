@@ -9,13 +9,27 @@
 
   h1 {
     background-color: #9c7d5dc0;
+    font-family: 'lora', serif;
   }
 
   p {
     background-color: #9c7d5dc0;
+    font-family: 'poppins', sans-serif;
   }
 
   img {
     width: 50%;
+  }
+}
+
+.categorias-destacadas {
+
+  h2,
+  h3 {
+    font-family: 'lora', serif;
+  }
+
+  a {
+    font-family: 'poppins', sans-serif;
   }
 }

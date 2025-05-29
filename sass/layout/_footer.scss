@@ -13,6 +13,7 @@
   h3 {
     color: map-get($color-font, fuente2);
     margin-bottom: 1rem;
+    font-family: 'lora', serif;
   }
 
   .footer-logo {
@@ -26,11 +27,13 @@
     p {
       margin-top: .5rem;
       line-height: 1.6;
+      font-family: 'poppins', sans-serif;
     }
 
     .footer-contacto p {
       margin-bottom: .5rem;
       line-height: 1.6;
+      font-family: 'poppins', sans-serif;
     }
   }
 
@@ -51,6 +54,7 @@
 }
 
 .footer-copy {
+  font-family: 'poppins', sans-serif;
   text-align: center;
   border-top: .0625rem solid #4DACB1;
   padding-top: 1rem;
