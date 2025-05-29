@@ -1,5 +1,5 @@
 .contactenos {
-  margin-top: 10%;
+  padding-top: 10%;
   @include flex(column, wrap, space-between, center, none);
   background-color: map-get($color-back, fondo2);
 }

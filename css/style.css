@@ -167,10 +167,10 @@ header .icons a img {
   align-content: center;
 }
 .bienvenida h1 {
-  background-color: #9C7C5D;
+  background-color: rgba(156, 125, 93, 0.7529411765);
 }
 .bienvenida p {
-  background-color: #9C7C5D;
+  background-color: rgba(156, 125, 93, 0.7529411765);
 }
 .bienvenida img {
   width: 50%;
@@ -229,11 +229,88 @@ header .icons a img {
   align-self: center;
 }
 
+.footer {
+  background-color: #89BBE2;
+  color: #000000;
+  padding: 3rem 2rem 1rem;
+  font-size: 0.95rem;
+}
+.footer .footer-contenido {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer h2,
+.footer h3 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.footer .footer-logo {
+  width: 6.875rem;
+  height: 15vh;
+  text-decoration: none;
+  border-radius: 0.625rem;
+}
+.footer .footer-descripcion p {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+.footer .footer-descripcion .footer-contacto p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.footer .footer-social a {
+  width: 2rem;
+  height: 2rem;
+  background-color: #89BBE2;
+  color: #000000;
+  border-radius: 100%;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.footer .footer-social a:hover {
+  background-color: #4DACB1;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 0.0625rem solid #4DACB1;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 1.25rem 0.625rem;
+}
+.navbar li a {
+  text-decoration: none;
+  border-radius: 0.625rem;
+  background-color: #4DACB1;
+  color: #000000;
+  font-size: 1.25rem;
+  padding: 0.625rem 1.25rem;
+  margin: 0rem 0.625rem;
+  display: inline-block;
+}
+
 .container-cards {
   display: grid;
   width: 100%;
   height: 100vh;
-  margin-top: 7.8125rem;
+  padding-top: 11%;
   background-color: #4DACB1;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -342,29 +419,8 @@ header .icons a img {
   align-self: center;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.25rem;
-  list-style: none;
-  padding: 1.25rem 0.625rem;
-}
-.navbar li a {
-  text-decoration: none;
-  border-radius: 0.625rem;
-  background-color: #4DACB1;
-  color: #000000;
-  font-size: 1.25rem;
-  padding: 0.625rem 1.25rem;
-  margin: 0rem 0.625rem;
-  display: inline-block;
-}
-
 .contactenos {
-  margin-top: 10%;
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -472,6 +528,95 @@ form button:hover {
 }
 .redes .iconos a:hover {
   background-color: #2D4B3E;
+}
+
+.nosotros-banner {
+  padding-top: 10%;
+  background-image: url();
+  text-align: center;
+  background-color: #4DACB1;
+}
+
+.nosotros-comienzo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #4DACB1;
+  border-top: 0.0625rem solid #9C7C5D;
+}
+
+.nuestro-objetivo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #4DACB1;
+  border-top: 0.0625rem solid #9C7C5D;
+  border-bottom: 0.0625rem solid #9C7C5D;
+}
+
+.faq-banner {
+  padding-top: 10%;
+  background-color: #4DACB1;
+  text-align: center;
+}
+.faq-banner h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.faq-banner p {
+  margin-top: 0.5rem;
+}
+
+.buscador-faq {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  margin-bottom: 2rem;
+}
+.buscador-faq input {
+  padding: 0.8rem 1rem;
+  border: 0.0625rem solid #000000;
+  border-radius: 1.5625rem 0 0 1.5625rem;
+  width: 100%;
+}
+.buscador-faq button {
+  padding: 0.8rem 1rem;
+  border: 0.0625rem solid #000000;
+  border-left: none;
+  border-radius: 0 1.5625rem 1.5625rem 0;
+  cursor: pointer;
+}
+
+.categorias-faq {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.categorias-faq button {
+  padding: 0.5rem 1.5rem;
+  border: 0.0625rem solid #000000;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
+.categorias-faq button.activo {
+  background-color: #4DACB1;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

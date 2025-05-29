@@ -1,0 +1,59 @@
+.footer {
+  background-color: map-get($color-back, fondo3);
+  color: map-get($color-font, fuente2);
+  padding: 3rem 2rem 1rem;
+  font-size: 0.95rem;
+
+  .footer-contenido {
+    @include flex(row, nowrap, space-between, center, 2rem);
+    margin-bottom: 2rem;
+  }
+
+  h2,
+  h3 {
+    color: map-get($color-font, fuente2);
+    margin-bottom: 1rem;
+  }
+
+  .footer-logo {
+    width: 6.875rem;
+    height: 15vh;
+    text-decoration: none;
+    border-radius: .625rem;
+  }
+
+  .footer-descripcion {
+    p {
+      margin-top: .5rem;
+      line-height: 1.6;
+    }
+
+    .footer-contacto p {
+      margin-bottom: .5rem;
+      line-height: 1.6;
+    }
+  }
+
+  .footer-social a {
+    width: 2rem;
+    height: 2rem;
+    background-color: map-get($color-back, fondo3);
+    color: map-get($color-font, fuente2);
+    border-radius: 100%;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: map-get($color-back, fondo1);
+    }
+  }
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: .0625rem solid #4DACB1;
+  padding-top: 1rem;
+  font-size: .85rem;
+  opacity: 0.9;
+}

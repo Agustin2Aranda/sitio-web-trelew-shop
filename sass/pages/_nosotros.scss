@@ -1,0 +1,23 @@
+.nosotros-banner {
+  padding-top: 10%;
+  background-image: url();
+  text-align: center;
+  background-color: map-get($color-back, fondo1);
+}
+
+.nosotros-comienzo {
+  @include flex(row, wrap, center, center, 2rem);
+  padding: 3rem 2rem;
+  background-color: map-get($color-back, fondo1);
+  border-top: .0625rem solid #9C7C5D;
+}
+
+//border-top: .0625rem solid #9C7C5D;
+
+.nuestro-objetivo {
+  @include flex(row, wrap, center, center, 2rem);
+  padding: 3rem 2rem;
+  background-color: map-get($color-back, fondo1);
+  border-top: .0625rem solid #9C7C5D;
+  border-bottom: .0625rem solid #9C7C5D;
+}
