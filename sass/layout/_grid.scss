@@ -70,6 +70,12 @@
   row-gap: .625rem;
   column-gap: .625rem;
 
+  h1{
+    grid-column: 1 / 6;
+    justify-self: center;
+    align-self: center;
+  }
+
   .cards-uno {
     margin: .625rem;
     padding: .625rem;

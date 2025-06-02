@@ -250,6 +250,11 @@ header .icons a img {
   row-gap: 0.625rem;
   column-gap: 0.625rem;
 }
+.container-cards h1 {
+  grid-column: 1/6;
+  justify-self: center;
+  align-self: center;
+}
 .container-cards .cards-uno {
   margin: 0.625rem;
   padding: 0.625rem;
@@ -430,10 +435,16 @@ header .icons a img {
 .container-cards h1 {
   margin: 0.625rem;
   padding: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
   font-family: "lora", serif;
-  grid-column: 3/4;
-  justify-self: center;
-  align-self: center;
+  background-image: radial-gradient(circle, rgba(137, 187, 226, 0.5490196078), rgba(156, 125, 93, 0.6039215686));
+  width: 100%;
+  height: auto;
 }
 
 .contactenos {

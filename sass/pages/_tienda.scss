@@ -19,9 +19,10 @@
   h1 {
     margin: .625rem;
     padding: .625rem;
+    @include flex(row, nowrap, center, center, none);
     font-family: 'lora', serif;
-    grid-column: 3 / 4;
-    justify-self: center;
-    align-self: center;
+    background-image: radial-gradient(circle, #89bbe28c, #9c7d5d9a);
+    width: 100%;
+    height: auto;
   }
 }
