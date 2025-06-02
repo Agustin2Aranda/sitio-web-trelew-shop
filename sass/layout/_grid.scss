@@ -62,8 +62,6 @@
 .container-cards {
   display: grid;
   width: 100%;
-  height: 100vh;
-  padding-top: 12%;
   background-color: map-get($color-back, fondo1);
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -73,7 +71,7 @@
   h1{
     grid-column: 1 / 6;
     justify-self: center;
-    align-self: center;
+    align-self: flex-end;
   }
 
   .cards-uno {

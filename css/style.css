@@ -242,8 +242,6 @@ header .icons a img {
 .container-cards {
   display: grid;
   width: 100%;
-  height: 100vh;
-  padding-top: 12%;
   background-color: #4DACB1;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -253,7 +251,7 @@ header .icons a img {
 .container-cards h1 {
   grid-column: 1/6;
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
 }
 .container-cards .cards-uno {
   margin: 0.625rem;
@@ -341,6 +339,7 @@ header .icons a img {
   color: #000000;
   padding: 3rem 2rem 1rem;
   font-size: 0.95rem;
+  top: auto;
 }
 .footer .footer-contenido {
   display: flex;
@@ -433,7 +432,6 @@ header .icons a img {
   width: 50%;
 }
 .container-cards h1 {
-  margin: 0.625rem;
   padding: 0.625rem;
   display: flex;
   flex-direction: row;
@@ -442,7 +440,7 @@ header .icons a img {
   align-items: center;
   gap: none;
   font-family: "lora", serif;
-  background-image: radial-gradient(circle, rgba(137, 187, 226, 0.5490196078), rgba(156, 125, 93, 0.6039215686));
+  background-image: radial-gradient(circle, #AEC8A4, rgba(156, 125, 93, 0.662745098));
   width: 100%;
   height: auto;
 }

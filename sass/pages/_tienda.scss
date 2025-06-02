@@ -17,11 +17,11 @@
 
 
   h1 {
-    margin: .625rem;
+    // margin: .625rem;
     padding: .625rem;
     @include flex(row, nowrap, center, center, none);
     font-family: 'lora', serif;
-    background-image: radial-gradient(circle, #89bbe28c, #9c7d5d9a);
+    background-image: radial-gradient(circle, #AEC8A4, #9c7d5da9);
     width: 100%;
     height: auto;
   }

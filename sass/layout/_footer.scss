@@ -3,6 +3,7 @@
   color: map-get($color-font, fuente2);
   padding: 3rem 2rem 1rem;
   font-size: 0.95rem;
+  top: auto;
 
   .footer-contenido {
     @include flex(row, nowrap, space-between, center, 2rem);
