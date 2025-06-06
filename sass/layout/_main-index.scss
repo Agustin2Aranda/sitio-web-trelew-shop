@@ -23,13 +23,31 @@
 }
 
 .categorias-destacadas {
+  button {
+    all: unset;
+    padding: .3125rem .9375rem;
+    margin-top: 1.25rem;
+    border: .0625rem solid map-get($color-back , fondo2);
+    background-color: map-get($colors , color2);
+    border-radius: .625rem;
+    box-shadow: .25rem .25rem .3125rem map-get($color-back , fondo2);
+
+    &:hover {
+      background-color: #B6B09F;
+    }
+
+    a {
+      font-family: 'poppins', sans-serif;
+      color: map-get($color-font, fuente2);
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
 
   h2,
   h3 {
     font-family: 'lora', serif;
-  }
-
-  a {
-    font-family: 'poppins', sans-serif;
   }
 }

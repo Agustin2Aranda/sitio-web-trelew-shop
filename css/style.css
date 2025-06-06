@@ -178,12 +178,28 @@ header .icons a img {
   width: 50%;
 }
 
+.categorias-destacadas button {
+  all: unset;
+  padding: 0.3125rem 0.9375rem;
+  margin-top: 1.25rem;
+  border: 0.0625rem solid #2D4B3E;
+  background-color: #EAE4D5;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.3125rem #2D4B3E;
+}
+.categorias-destacadas button:hover {
+  background-color: #B6B09F;
+}
+.categorias-destacadas button a {
+  font-family: "poppins", sans-serif;
+  color: #000000;
+}
+.categorias-destacadas button a:hover {
+  color: white;
+}
 .categorias-destacadas h2,
 .categorias-destacadas h3 {
   font-family: "lora", serif;
-}
-.categorias-destacadas a {
-  font-family: "poppins", sans-serif;
 }
 
 .categorias-destacadas {
@@ -195,15 +211,6 @@ header .icons a img {
   grid-template-rows: repeat(3, 1fr);
   row-gap: 0.625rem;
   column-gap: 0.625rem;
-}
-.categorias-destacadas button {
-  all: unset;
-  padding: 0.3125rem 0.9375rem;
-  margin-top: 1.25rem;
-  border: 0.0625rem solid #2D4B3E;
-  background-color: #89BBE2;
-  border-radius: 0.625rem;
-  box-shadow: 0.25rem 0.25rem 0.3125rem #2D4B3E;
 }
 .categorias-destacadas img {
   width: 50%;
@@ -422,11 +429,16 @@ header .icons a img {
   padding: 0.3125rem 0.9375rem;
   margin-top: 1.25rem;
   border: 0.0625rem solid #2D4B3E;
-  background-color: #89BBE2;
+  background-color: #EAE4D5;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.3125rem #2D4B3E;
   color: #000000;
   cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+.container-cards button:hover {
+  background-color: #B6B09F;
+  color: white;
 }
 .container-cards img {
   width: 50%;

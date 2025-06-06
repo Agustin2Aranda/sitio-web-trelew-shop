@@ -4,11 +4,17 @@
     padding: .3125rem .9375rem;
     margin-top: 1.25rem;
     border: .0625rem solid map-get($color-back , fondo2);
-    background-color: map-get($color-back , fondo3);
+    background-color: map-get($colors , color2);
     border-radius: .625rem;
     box-shadow: .25rem .25rem .3125rem map-get($color-back , fondo2);
     color: map-get($color-font , fuente2);
     cursor: pointer;
+    transition: background-color 0.5 ease;
+
+    &:hover {
+      background-color: #B6B09F;
+      color: white;
+    }
   }
 
   img {
