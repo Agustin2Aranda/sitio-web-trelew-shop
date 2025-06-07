@@ -15,5 +15,8 @@
     "url": "https://github.com/Agustin2Aranda/sitio-web-trelew-shop/issues"
   },
   "homepage": "https://github.com/Agustin2Aranda/sitio-web-trelew-shop#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
 }
