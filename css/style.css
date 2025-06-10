@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 ul,
 ol {
   list-style: none;
@@ -59,7 +65,7 @@ header .icons a img {
   height: 24px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
   header {
     display: flex;
     flex-direction: row;
@@ -80,15 +86,15 @@ header .icons a img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -96,17 +102,7 @@ header .icons a img {
   }
   .contenedor-logo {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: none;
-  }
-}
-@media (max-width: 500px) {
-  header {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -114,47 +110,17 @@ header .icons a img {
   }
   .navbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: none;
   }
 }
-@media (max-width: 375px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: none;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: none;
-  }
-}
-@media (max-width: 330px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: none;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: none;
+@media (max-width: 380px) {
+  header .logo {
+    width: 6rem;
+    height: 14vh;
   }
 }
 .bienvenida {
@@ -197,11 +163,43 @@ header .icons a img {
 .categorias-destacadas button a:hover {
   color: white;
 }
+.categorias-destacadas img {
+  border-radius: 0.5rem;
+}
 .categorias-destacadas h2,
 .categorias-destacadas h3 {
   font-family: "lora", serif;
 }
 
+@media (max-width: 800px) {
+  main {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .bienvenida {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: hidden;
+  }
+  .bienvenida h1 {
+    font-size: 1rem;
+  }
+  .categorias-destacadas {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .categorias-destacadas img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+  }
+}
 .categorias-destacadas {
   display: grid;
   width: 100%;
@@ -242,7 +240,7 @@ header .icons a img {
   padding: 0.625rem;
   grid-column: 3/4;
   grid-row: 2/3;
-  justify-self: self-end;
+  justify-self: center;
   align-self: center;
 }
 
@@ -341,6 +339,59 @@ header .icons a img {
   align-self: center;
 }
 
+@media (max-width: 800px) {
+  .categorias-destacadas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .categorias-destacadas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .categorias-destacadas h2 {
+    font-size: 1.25rem;
+  }
+  .categorias-destacadas img {
+    width: 25%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+  }
+  .categorias-destacadas h3 {
+    font-size: 0.9375rem;
+  }
+  .categorias-destacadas button {
+    font-size: 0.625rem;
+  }
+  .categorias-destacadas .categoria-uno {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-items: center;
+  }
+  .categorias-destacadas .categoria-dos {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-items: center;
+  }
+  .categorias-destacadas .categoria-tres {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-items: center;
+  }
+}
 .footer {
   background-color: #89BBE2;
   color: #000000;
@@ -402,6 +453,44 @@ header .icons a img {
   opacity: 0.9;
 }
 
+@media (max-width: 430px) {
+  .footer {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+  .footer h2,
+  .footer h3 {
+    font-size: 0.75rem;
+  }
+  .footer p {
+    margin: 0;
+    font-size: 0.625rem;
+  }
+  .footer .footer-logo {
+    height: 10vh;
+  }
+}
+@media (max-width: 380px) {
+  .footer .footer-contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  .footer .footer-contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4375rem;
+  }
+}
 .navbar {
   display: flex;
   flex-direction: center;
@@ -432,7 +521,7 @@ header .icons a img {
   display: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1030px) {
   .navbar {
     display: flex;
     flex-direction: row;
@@ -444,18 +533,19 @@ header .icons a img {
     height: auto;
   }
   .navbar li a {
+    display: block;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0rem 0.625rem;
+    font-size: 1rem;
     font-family: "lora", serif;
     border-radius: 0.625rem;
     background-color: #4DACB1;
     color: #000000;
-    font-size: 1.25rem;
-    padding: 0.625rem 1.25rem;
-    margin: 0rem 0.625rem;
-    display: inline-block;
+    white-space: nowrap;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .hamburger {
     display: block;
   }
@@ -494,6 +584,7 @@ header .icons a img {
 }
 .container-cards img {
   width: 50%;
+  border-radius: 0.5rem;
 }
 .container-cards h1 {
   padding: 0.625rem;

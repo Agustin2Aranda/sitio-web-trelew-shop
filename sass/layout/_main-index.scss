@@ -46,8 +46,50 @@
     }
   }
 
+  img {
+    border-radius: .5rem;
+  }
+
   h2,
   h3 {
     font-family: 'lora', serif;
   }
+}
+
+@media (max-width: 800px) {
+  main {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .bienvenida {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: hidden;
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .categorias-destacadas {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: .5rem;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .categorias-destacadas {}
 }

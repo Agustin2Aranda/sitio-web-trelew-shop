@@ -39,9 +39,23 @@ header {
   }
 }
 
-@media(max-width:1024px) {
+@media(max-width:1030px) {
   header {
     @include flex(row, nowrap, space-around, center, none);
+  }
+
+  .contenedor-logo {
+    @include flex(row, nowrap, space-between, center, none);
+  }
+
+  .navbar {
+    @include flex(row, nowrap, space-between, center, none);
+  }
+}
+
+@media(max-width:950px) {
+  header {
+    @include flex(row, nowrap, space-between, center, none);
   }
 
   .contenedor-logo {
@@ -53,42 +67,11 @@ header {
   }
 }
 
-@media(max-width:768px) {
+@media (max-width: 380px) {
   header {
-    @include flex(column, nowrap, space-between, center, none);
-  }
-
-  .contenedor-logo {
-    @include flex(column, nowrap, center, center, none);
-  }
-}
-
-@media(max-width:500px) {
-  header {
-    @include flex(column, nowrap, space-between, center, none);
-  }
-
-  .navbar {
-    @include flex(column, nowrap, center, center, none);
-  }
-}
-
-@media(max-width:375px) {
-  header {
-    @include flex(column, nowrap, center, center, none);
-  }
-
-  .navbar {
-    @include flex(column, nowrap, center, center, none);
-  }
-}
-
-@media(max-width:330px) {
-  header {
-    @include flex(column, nowrap, center, center, none);
-  }
-
-  .navbar {
-    @include flex(column, nowrap, center, center, none);
+    .logo {
+      width: 6rem;
+      height: 14vh;
+    }
   }
 }
