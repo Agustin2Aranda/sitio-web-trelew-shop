@@ -90,6 +90,8 @@
   }
 }
 
-// @media (max-width: 430px) {
-//   .categorias-destacadas {}
-// }
+@media (max-width: 430px) {
+  .categorias-destacadas {
+    overflow: hidden;
+  }
+}

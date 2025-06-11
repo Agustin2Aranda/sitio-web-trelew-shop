@@ -21,3 +21,21 @@
   border-top: .0625rem solid #9C7C5D;
   border-bottom: .0625rem solid #9C7C5D;
 }
+
+@media(max-width:950px) {
+  .nosotros-banner {
+    padding-top: 15%;
+  }
+}
+
+@media(max-width:430px) {
+  .nosotros-banner {
+    padding-top: 30%;
+  }
+}
+
+@media(max-width:340px) {
+  .nosotros-banner {
+    padding-top: 35%;
+  }
+}

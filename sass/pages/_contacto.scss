@@ -1,12 +1,12 @@
 .contactenos {
   padding-top: 10%;
   @include flex(column, wrap, space-between, center, none);
-  background-color: map-get($color-back, fondo2);
+  background-color: #B8CFCE;
 }
 
 .info {
   padding: 2rem;
-  background-color: map-get($color-back, fondo2);
+  background-color: #B8CFCE;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: .625rem;
@@ -36,7 +36,7 @@
 }
 
 .formulario {
-  background-color: map-get($color-back, fondo2);
+  background-color: #B8CFCE;
   padding: 1.5rem;
 
   h2 {
@@ -57,7 +57,7 @@ form {
   }
 
   button {
-    background-color: map-get($color-back, fondo1);
+    background-color: map-get($colors, color2);
     color: map-get($color-font, fuente2);
     border: none;
     padding: .75rem;
@@ -65,7 +65,7 @@ form {
     cursor: pointer;
 
     &:hover {
-      background-color: map-get($color-back, fondo3);
+      background-color: #B6B09F;
     }
   }
 }
@@ -91,5 +91,29 @@ form {
         background-color: map-get($color-back, fondo2);
       }
     }
+  }
+}
+
+@media(max-width:950px) {
+  .contactenos {
+    padding-top: 15%;
+  }
+}
+
+@media(max-width:430px) {
+  .contactenos {
+    padding-top: 30%;
+  }
+
+  .info {
+    ul {
+      justify-items: center;
+    }
+  }
+}
+
+@media(max-width:350px) {
+  .contactenos {
+    padding-top: 35%;
   }
 }

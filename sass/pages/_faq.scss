@@ -1,6 +1,6 @@
 .faq-banner {
   padding-top: 10%;
-  background-color: map-get($color-back, fondo1);
+  background-color: map-get($colors, color2);
   text-align: center;
 
   h1 {
@@ -11,6 +11,10 @@
   p {
     margin-top: .5rem;
   }
+}
+
+.faq-section {
+  background-color: map-get($colors, color2);
 }
 
 .buscador-faq {
@@ -57,6 +61,7 @@
   border-radius: .3125rem;
   margin-bottom: 1rem;
   overflow: hidden;
+  background-color: #ffffff;
 
   &.abierto {
     border: .125rem solid map-get($color-back, fondo3);
@@ -65,4 +70,44 @@
 
 .respuestas {
   padding: 0 1rem 1rem;
+}
+
+@media(max-width:950px) {
+  .faq-banner {
+    padding-top: 15%;
+  }
+}
+
+@media(max-width:430px) {
+  .faq-banner {
+    padding-top: 25%;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media(max-width:380px) {
+  .faq-banner {
+    padding-top: 27%;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media(max-width:350px) {
+  .faq-banner {
+    padding-top: 32%;
+
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+
+  .buscador-faq {
+    margin-bottom: 1.5rem;
+  }
 }

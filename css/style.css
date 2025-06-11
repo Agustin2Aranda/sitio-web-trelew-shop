@@ -200,6 +200,11 @@ header .icons a img {
     border-radius: 0.5rem;
   }
 }
+@media (max-width: 430px) {
+  .categorias-destacadas {
+    overflow: hidden;
+  }
+}
 .categorias-destacadas {
   display: grid;
   width: 100%;
@@ -354,6 +359,7 @@ header .icons a img {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    height: auto;
   }
   .categorias-destacadas h2 {
     font-size: 1.25rem;
@@ -390,6 +396,98 @@ header .icons a img {
     grid-column: 2/3;
     grid-row: 4/5;
     justify-items: center;
+  }
+}
+@media (max-width: 430px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .container-cards h1 {
+    grid-column: 1/3;
+    justify-self: center;
+    align-self: flex-end;
+  }
+  .container-cards .cards-uno {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-dos {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-tres {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-cuatro {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-cinco {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-seis {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-siete {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-ocho {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-nueve {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
+  }
+  .container-cards .cards-diez {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    justify-self: center;
+    align-self: center;
   }
 }
 .footer {
@@ -608,12 +706,12 @@ header .icons a img {
   justify-content: space-between;
   align-items: center;
   gap: none;
-  background-color: #2D4B3E;
+  background-color: #B8CFCE;
 }
 
 .info {
   padding: 2rem;
-  background-color: #2D4B3E;
+  background-color: #B8CFCE;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.625rem;
@@ -640,7 +738,7 @@ header .icons a img {
 }
 
 .formulario {
-  background-color: #2D4B3E;
+  background-color: #B8CFCE;
   padding: 1.5rem;
 }
 .formulario h2 {
@@ -669,7 +767,7 @@ form textarea {
   font-size: 1rem;
 }
 form button {
-  background-color: #4DACB1;
+  background-color: #EAE4D5;
   color: #000000;
   border: none;
   padding: 0.75rem;
@@ -677,7 +775,7 @@ form button {
   cursor: pointer;
 }
 form button:hover {
-  background-color: #89BBE2;
+  background-color: #B6B09F;
 }
 
 .redes {
@@ -711,6 +809,24 @@ form button:hover {
   background-color: #2D4B3E;
 }
 
+@media (max-width: 950px) {
+  .contactenos {
+    padding-top: 15%;
+  }
+}
+@media (max-width: 430px) {
+  .contactenos {
+    padding-top: 30%;
+  }
+  .info ul {
+    justify-items: center;
+  }
+}
+@media (max-width: 350px) {
+  .contactenos {
+    padding-top: 35%;
+  }
+}
 .nosotros-banner {
   padding-top: 10%;
   background-image: url();
@@ -743,9 +859,24 @@ form button:hover {
   border-bottom: 0.0625rem solid #9C7C5D;
 }
 
+@media (max-width: 950px) {
+  .nosotros-banner {
+    padding-top: 15%;
+  }
+}
+@media (max-width: 430px) {
+  .nosotros-banner {
+    padding-top: 30%;
+  }
+}
+@media (max-width: 340px) {
+  .nosotros-banner {
+    padding-top: 35%;
+  }
+}
 .faq-banner {
   padding-top: 10%;
-  background-color: #4DACB1;
+  background-color: #EAE4D5;
   text-align: center;
 }
 .faq-banner h1 {
@@ -754,6 +885,10 @@ form button:hover {
 }
 .faq-banner p {
   margin-top: 0.5rem;
+}
+
+.faq-section {
+  background-color: #EAE4D5;
 }
 
 .buscador-faq {
@@ -811,6 +946,7 @@ form button:hover {
   border-radius: 0.3125rem;
   margin-bottom: 1rem;
   overflow: hidden;
+  background-color: #ffffff;
 }
 .preguntas.abierto {
   border: 0.125rem solid #89BBE2;
@@ -818,6 +954,39 @@ form button:hover {
 
 .respuestas {
   padding: 0 1rem 1rem;
+}
+
+@media (max-width: 950px) {
+  .faq-banner {
+    padding-top: 15%;
+  }
+}
+@media (max-width: 430px) {
+  .faq-banner {
+    padding-top: 25%;
+  }
+  .faq-banner h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 380px) {
+  .faq-banner {
+    padding-top: 27%;
+  }
+  .faq-banner h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 350px) {
+  .faq-banner {
+    padding-top: 32%;
+  }
+  .faq-banner h1 {
+    font-size: 1.9rem;
+  }
+  .buscador-faq {
+    margin-bottom: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
