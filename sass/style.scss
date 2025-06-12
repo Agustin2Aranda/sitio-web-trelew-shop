@@ -16,3 +16,7 @@
 @import "./pages/contacto";
 @import "./pages/nosotros";
 @import "./pages/faq";
+
+.usa-bootstrap {
+  @import "../node_modules/bootstrap/scss/bootstrap";
+}

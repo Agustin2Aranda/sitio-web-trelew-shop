@@ -18,12 +18,9 @@
   }
 }
 
-.hamburger {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none; // oculto en desktop
+.usa-bootstrap .collapse {
+  position: relative;
+  margin-top: 6.3rem;
 }
 
 @media (max-width: 1030px) {
@@ -50,9 +47,6 @@
 }
 
 @media (max-width: 950px) {
-  .hamburger {
-    display: block; // mostrar hamburguesa
-  }
 
   .navbar {
     display: none; // oculto por defecto
